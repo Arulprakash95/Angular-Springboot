@@ -1,0 +1,39 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2 style="color:blueviolet">Reader View List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Price</th>  
+            <th>Mail-ID</th>
+            <th>Content</th>
+            <th>Action</th> 
+                   
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let book of subscribers | async">
+            <td>{{book.name}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.price}}</td>  
+            <td>{{book.mailid}}</td>  
+            <td>
+              <button *ngIf="book.subscription == 1 && book.block == 0" (click)="subscriberDetails(book.id)" class="btn btn-info" style="margin-left: 10px">Read</button>
+          </td> 
+            <td><button *ngIf="book.subscription == 0 && book.block == 0" (click)="subscribeBook(book.id)" class="btn btn-primary">Subscribe</button>
+              <button *ngIf="book.subscription == 1 && book.block == 0"(click)="unsubscribeBook(book.id)" class="btn btn-warning">UnSubscribe</button>
+              <b *ngIf="book.block == 1" style="color:red">**Blocked**</b>
+          </td>
+          
+          <!-- <td><button (click)="deleteSubscriber(book.id)" class="btn btn-danger">Delete</button>
+              <button (click)="subscriberDetails(book.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+          </td>   --> 
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

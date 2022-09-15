@@ -1,0 +1,21 @@
+<h2 style=color:darkcyan>Book Details</h2>
+
+<hr/>
+<div *ngIf="subscriber">
+ 
+  <div>
+    <label><b>Email-ID: </b></label> {{subscriber.mailid}}
+  </div>
+
+  <div>
+    <label><b>Content:</b></label> 
+    <p>This Book <b>{{subscriber.name}}</b> is a famous one written by the famous author <b>{{subscriber.author}}</b>
+      It is a medium for recording information in the form of writing or images, typically 
+      composed of many pages (made of papyrus, parchment, vellum, or paper) bound together and protected by a cover.
+    </p>
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Books List</button><br>

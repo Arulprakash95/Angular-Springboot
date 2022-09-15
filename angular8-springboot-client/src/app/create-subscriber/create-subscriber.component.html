@@ -1,0 +1,31 @@
+<h3 style="color:midnightblue">Create Book</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="subscriber.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Author</label>
+      <input type="text" class="form-control" id="author" required [(ngModel)]="subscriber.author" name="author">
+    </div>
+
+   <!-- <div class="form-group">
+      <label for="name">Email</label>
+      <input type="text" class="form-control" id="mailid" required [(ngModel)]="subscriber.mailid" name="mailid">
+    </div> -->
+
+    <div class="form-group">
+      <label for="name">Price</label>
+      <input type="number" class="form-control" id="price" required [(ngModel)]="subscriber.price" name="price">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>Book Created successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newSubscriber()">Add</button> -->
+</div>
