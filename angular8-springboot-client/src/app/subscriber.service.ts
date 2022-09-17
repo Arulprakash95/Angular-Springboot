@@ -7,7 +7,8 @@ import { Admin } from './admin';
   providedIn: 'root'
 })
 export class SubscriberService {
-  private baseUrl = 'http://localhost:8091/books';
+  
+  private baseUrl = 'http://35.85.215.134:8091/books';
 
   constructor(private http: HttpClient) { }
 
