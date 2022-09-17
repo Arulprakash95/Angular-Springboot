@@ -7,8 +7,11 @@ import { Admin } from './admin';
   providedIn: 'root'
 })
 export class SubscriberService {
-  
-  private baseUrl = 'http://35.85.215.134:8091/books';
+  //private baseUrl = 'http://localhost:8091/books';
+
+  //private baseUrl = 'http://35.85.215.134:8091/books';
+
+  private baseUrl = 'https://n3ao723ldk.execute-api.us-west-2.amazonaws.com/shows';
 
   constructor(private http: HttpClient) { }
 

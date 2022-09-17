@@ -2102,8 +2102,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       function SubscriberService(http) {
         _classCallCheck(this, SubscriberService);
 
-        this.http = http;
-        this.baseUrl = 'http://35.85.215.134:8091/books';
+        this.http = http; //private baseUrl = 'http://localhost:8091/books';
+        //private baseUrl = 'http://35.85.215.134:8091/books';
+
+        this.baseUrl = 'https://n3ao723ldk.execute-api.us-west-2.amazonaws.com/shows';
       }
 
       _createClass(SubscriberService, [{

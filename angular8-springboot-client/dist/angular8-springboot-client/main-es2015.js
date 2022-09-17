@@ -1091,7 +1091,9 @@ __webpack_require__.r(__webpack_exports__);
 let SubscriberService = class SubscriberService {
     constructor(http) {
         this.http = http;
-        this.baseUrl = 'http://35.85.215.134:8091/books';
+        //private baseUrl = 'http://localhost:8091/books';
+        //private baseUrl = 'http://35.85.215.134:8091/books';
+        this.baseUrl = 'https://n3ao723ldk.execute-api.us-west-2.amazonaws.com/shows';
     }
     loginAdmin(admin) {
         return this.http.post(`${this.baseUrl}/authenticate`, admin);
