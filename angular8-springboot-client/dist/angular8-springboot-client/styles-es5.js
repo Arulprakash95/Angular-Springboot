@@ -400,11 +400,11 @@
   /***/
   function _(module, exports, __webpack_require__) {
     __webpack_require__(
-    /*! D:\NEW\angular8-springboot-client\src\styles.css */
+    /*! D:\Angular-Springboot\angular8-springboot-client\src\styles.css */
     "./src/styles.css");
 
     module.exports = __webpack_require__(
-    /*! D:\NEW\angular8-springboot-client\node_modules\bootstrap\dist\css\bootstrap.min.css */
+    /*! D:\Angular-Springboot\angular8-springboot-client\node_modules\bootstrap\dist\css\bootstrap.min.css */
     "./node_modules/bootstrap/dist/css/bootstrap.min.css");
     /***/
   }

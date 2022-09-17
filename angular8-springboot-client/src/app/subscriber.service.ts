@@ -1,22 +1,24 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Admin } from './admin';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SubscriberService {
   private baseUrl = 'http://localhost:8091/books';
-  private auth='http://localhost:8091/';
 
   constructor(private http: HttpClient) { }
 
-  authenticate(): Observable<any> {
-    return this.http.get(`${this.auth}`);
+  loginAdmin(admin: Admin) {
+    return this.http.post(`${this.baseUrl}/authenticate`, admin);
   }
+  
 
   getAllBooks(): Observable<any> {
-    return this.http.get(`${this.baseUrl}`);
+    return this.http.get(`${this.baseUrl}`,
+    {headers:{"Authorization":"Bearer "+localStorage.getItem("token")}});
   }
 
   getBookById(id: number): Observable<any> {

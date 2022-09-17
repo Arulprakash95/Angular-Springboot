@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html>\n<head>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<style>\nbody {font-family: Arial, Helvetica, sans-serif;}\n\n/* Full-width input fields */\ninput[type=text], input[type=password] {\n  width: 100%;\n  padding: 12px 20px;\n  margin: 8px 0;\n  display: inline-block;\n  border: 1px solid #ccc;\n  box-sizing: border-box;\n}\n\n/* Set a style for all buttons */\nbutton {\n  background-color: #04AA6D;\n  color: white;\n  padding: 14px 20px;\n  margin: 8px 0;\n  border: none;\n  cursor: pointer;\n  width: 100%;\n}\n\nbutton:hover {\n  opacity: 0.8;\n}\n\n/* Extra styles for the cancel button */\n.cancelbtn {\n  width: auto;\n  padding: 10px 18px;\n  background-color: #f44336;\n}\n\n/* Center the image and position the close button */\n.imgcontainer {\n  text-align: center;\n  margin: 24px 0 12px 0;\n  position: relative;\n}\n\nimg.avatar {\n  width: 40%;\n  border-radius: 50%;\n}\n\n.container {\n  padding: 16px;\n}\n\nspan.psw {\n  float: right;\n  padding-top: 16px;\n}\n\n/* The Modal (background) */\n.modal {\n  display: none; /* Hidden by default */\n  position: fixed; /* Stay in place */\n  z-index: 1; /* Sit on top */\n  left: 0;\n  top: 0;\n  width: 100%; /* Full width */\n  height: 100%; /* Full height */\n  overflow: auto; /* Enable scroll if needed */\n  background-color: rgb(0,0,0); /* Fallback color */\n  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */\n  padding-top: 60px;\n}\n\n/* Modal Content/Box */\n.modal-content {\n  background-color: #fefefe;\n  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */\n  border: 1px solid #888;\n  width: 80%; /* Could be more or less, depending on screen size */\n}\n\n/* The Close Button (x) */\n.close {\n  position: absolute;\n  right: 25px;\n  top: 0;\n  color: #000;\n  font-size: 35px;\n  font-weight: bold;\n}\n\n.close:hover,\n.close:focus {\n  color: red;\n  cursor: pointer;\n}\n\n/* Add Zoom Animation */\n.animate {\n  -webkit-animation: animatezoom 0.6s;\n  animation: animatezoom 0.6s\n}\n\n@-webkit-keyframes animatezoom {\n  from {-webkit-transform: scale(0)} \n  to {-webkit-transform: scale(1)}\n}\n  \n@keyframes animatezoom {\n  from {transform: scale(0)} \n  to {transform: scale(1)}\n}\n\n/* Change styles for span and cancel button on extra small screens */\n@media screen and (max-width: 300px) {\n  span.psw {\n     display: block;\n     float: none;\n  }\n  .cancelbtn {\n     width: 100%;\n  }\n}\n</style>\n</head>\n<body>\n\n<h3 style=\"color: rgb(144, 167, 17);\">Welcome Home for Book Store Application !!!</h3>\n\n<button onclick=\"document.getElementById('id01').style.display='block'\" style=\"width:auto;\">Login</button>\n\n<div id=\"id01\" class=\"modal\">\n  \n  <form (ngSubmit)=\"onSubmit()\" class=\"modal-content animate\" >\n  \n    <div class=\"imgcontainer\">\n      <span onclick=\"document.getElementById('id01').style.display='none'\" class=\"close\" title=\"Close Modal\">&times;</span>\n     <!-- <img src=\"img_avatar2.png\" alt=\"Avatar\" class=\"avatar\"> -->\n    </div>\n\n    <div class=\"container\">\n      <label for=\"uname\"><b>Username</b></label>\n      <input type=\"text\" placeholder=\"Enter Username\" name=\"username\" required>\n\n      <label for=\"psw\"><b>Password</b></label>\n      <input type=\"password\" placeholder=\"Enter Password\" name=\"password\" required>\n        \n      <button type=\"submit\">Login</button>\n     <!--   <label>\n      <input type=\"checkbox\" checked=\"checked\" name=\"remember\"> Remember me\n      </label> -->\n    </div>\n\n    <!--  <div class=\"container\" style=\"background-color:#f1f1f1\">\n      <button type=\"button\" onclick=\"document.getElementById('id01').style.display='none'\" class=\"cancelbtn\">Cancel</button>\n      <span class=\"psw\">Forgot <a href=\"#\">password?</a></span> \n    </div>-->\n  </form>\n</div>\n\n<script>\n// Get the modal\nvar modal = document.getElementById('id01');\n\n// When the user clicks anywhere outside of the modal, close it\nwindow.onclick = function(event) {\n    if (event.target == modal) {\n        modal.style.display = \"none\";\n    }\n}\n</script>\n\n</body>\n</html>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html>\n<head>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<style>\nbody {font-family: Arial, Helvetica, sans-serif;}\n\n/* Full-width input fields */\ninput[type=text], input[type=password] {\n  width: 100%;\n  padding: 12px 20px;\n  margin: 8px 0;\n  display: inline-block;\n  border: 1px solid #ccc;\n  box-sizing: border-box;\n}\n\n/* Set a style for all buttons */\nbutton {\n  background-color: #04AA6D;\n  color: white;\n  padding: 14px 20px;\n  margin: 8px 0;\n  border: none;\n  cursor: pointer;\n  width: 100%;\n}\n\nbutton:hover {\n  opacity: 0.8;\n}\n\n/* Extra styles for the cancel button */\n.cancelbtn {\n  width: auto;\n  padding: 10px 18px;\n  background-color: #f44336;\n}\n\n/* Center the image and position the close button */\n.imgcontainer {\n  text-align: center;\n  margin: 24px 0 12px 0;\n  position: relative;\n}\n\nimg.avatar {\n  width: 40%;\n  border-radius: 50%;\n}\n\n.container {\n  padding: 16px;\n}\n\nspan.psw {\n  float: right;\n  padding-top: 16px;\n}\n\n/* The Modal (background) */\n.modal {\n  display: none; /* Hidden by default */\n  position: fixed; /* Stay in place */\n  z-index: 1; /* Sit on top */\n  left: 0;\n  top: 0;\n  width: 100%; /* Full width */\n  height: 100%; /* Full height */\n  overflow: auto; /* Enable scroll if needed */\n  background-color: rgb(0,0,0); /* Fallback color */\n  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */\n  padding-top: 60px;\n}\n\n/* Modal Content/Box */\n.modal-content {\n  background-color: #fefefe;\n  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */\n  border: 1px solid #888;\n  width: 80%; /* Could be more or less, depending on screen size */\n}\n\n/* The Close Button (x) */\n.close {\n  position: absolute;\n  right: 25px;\n  top: 0;\n  color: #000;\n  font-size: 35px;\n  font-weight: bold;\n}\n\n.close:hover,\n.close:focus {\n  color: red;\n  cursor: pointer;\n}\n\n/* Add Zoom Animation */\n.animate {\n  -webkit-animation: animatezoom 0.6s;\n  animation: animatezoom 0.6s\n}\n\n@-webkit-keyframes animatezoom {\n  from {-webkit-transform: scale(0)} \n  to {-webkit-transform: scale(1)}\n}\n  \n@keyframes animatezoom {\n  from {transform: scale(0)} \n  to {transform: scale(1)}\n}\n\n/* Change styles for span and cancel button on extra small screens */\n@media screen and (max-width: 300px) {\n  span.psw {\n     display: block;\n     float: none;\n  }\n  .cancelbtn {\n     width: 100%;\n  }\n}\n</style>\n</head>\n<body>\n\n<h3 style=\"color: rgb(144, 167, 17);\">Welcome Home for Book Store Application !!!</h3>\n\n<button onclick=\"document.getElementById('id01').style.display='block'\" style=\"width:auto;\">Login</button>\n\n<div id=\"id01\" class=\"modal\">\n  \n  <form [formGroup] = \"formdata\" (ngSubmit) = \"onClickLogin(formdata.value)\" class=\"modal-content animate\" >\n    \n  \n    <div class=\"imgcontainer\">\n      <span onclick=\"document.getElementById('id01').style.display='none'\" class=\"close\" title=\"Close Modal\">&times;</span>\n     <!-- <img src=\"img_avatar2.png\" alt=\"Avatar\" class=\"avatar\"> -->\n    </div>\n\n    <div class=\"container\">\n      <label for=\"uname\"><b>Username</b></label>\n      <input type=\"text\" placeholder=\"Enter Username\" name=\"username\" required  formControlName=\"username\">\n\n      <label for=\"psw\"><b>Password</b></label>\n      <input type=\"password\" placeholder=\"Enter Password\" name=\"password\" required  formControlName=\"password\">\n        \n      <button type=\"submit\">Login</button>\n    \n    </div>\n\n   \n  </form>\n</div>\n\n<script>\n// Get the modal\nvar modal = document.getElementById('id01');\n\n// When the user clicks anywhere outside of the modal, close it\nwindow.onclick = function(event) {\n    if (event.target == modal) {\n        modal.style.display = \"none\";\n    }\n}\n</script>\n\n</body>\n</html>\n");
 
 /***/ }),
 
@@ -517,12 +517,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _create_subscriber_create_subscriber_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./create-subscriber/create-subscriber.component */ "./src/app/create-subscriber/create-subscriber.component.ts");
-/* harmony import */ var _subscriber_details_subscriber_details_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./subscriber-details/subscriber-details.component */ "./src/app/subscriber-details/subscriber-details.component.ts");
-/* harmony import */ var _subscriber_list_subscriber_list_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./subscriber-list/subscriber-list.component */ "./src/app/subscriber-list/subscriber-list.component.ts");
-/* harmony import */ var _update_subscriber_update_subscriber_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./update-subscriber/update-subscriber.component */ "./src/app/update-subscriber/update-subscriber.component.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _create_subscriber_create_subscriber_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./create-subscriber/create-subscriber.component */ "./src/app/create-subscriber/create-subscriber.component.ts");
+/* harmony import */ var _subscriber_details_subscriber_details_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./subscriber-details/subscriber-details.component */ "./src/app/subscriber-details/subscriber-details.component.ts");
+/* harmony import */ var _subscriber_list_subscriber_list_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./subscriber-list/subscriber-list.component */ "./src/app/subscriber-list/subscriber-list.component.ts");
+/* harmony import */ var _update_subscriber_update_subscriber_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./update-subscriber/update-subscriber.component */ "./src/app/update-subscriber/update-subscriber.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 /* harmony import */ var _subscribe_book_subscribe_book_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./subscribe-book/subscribe-book.component */ "./src/app/subscribe-book/subscribe-book.component.ts");
 /* harmony import */ var _unsubscribe_book_unsubscribe_book_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./unsubscribe-book/unsubscribe-book.component */ "./src/app/unsubscribe-book/unsubscribe-book.component.ts");
 /* harmony import */ var _block_book_block_book_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./block-book/block-book.component */ "./src/app/block-book/block-book.component.ts");
@@ -552,10 +552,10 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
             _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-            _create_subscriber_create_subscriber_component__WEBPACK_IMPORTED_MODULE_5__["CreateSubscriberComponent"],
-            _subscriber_details_subscriber_details_component__WEBPACK_IMPORTED_MODULE_6__["SubscriberDetailsComponent"],
-            _subscriber_list_subscriber_list_component__WEBPACK_IMPORTED_MODULE_7__["SubscriberListComponent"],
-            _update_subscriber_update_subscriber_component__WEBPACK_IMPORTED_MODULE_8__["UpdateSubscriberComponent"],
+            _create_subscriber_create_subscriber_component__WEBPACK_IMPORTED_MODULE_6__["CreateSubscriberComponent"],
+            _subscriber_details_subscriber_details_component__WEBPACK_IMPORTED_MODULE_7__["SubscriberDetailsComponent"],
+            _subscriber_list_subscriber_list_component__WEBPACK_IMPORTED_MODULE_8__["SubscriberListComponent"],
+            _update_subscriber_update_subscriber_component__WEBPACK_IMPORTED_MODULE_9__["UpdateSubscriberComponent"],
             _subscribe_book_subscribe_book_component__WEBPACK_IMPORTED_MODULE_11__["SubscribeBookComponent"],
             _unsubscribe_book_unsubscribe_book_component__WEBPACK_IMPORTED_MODULE_12__["UnsubscribeBookComponent"],
             _block_book_block_book_component__WEBPACK_IMPORTED_MODULE_13__["BlockBookComponent"],
@@ -566,8 +566,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_10__["FormsModule"],
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"]
+            _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HttpClientModule"]
         ],
         providers: [],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
@@ -809,6 +810,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _subscriber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../subscriber */ "./src/app/subscriber.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _subscriber_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../subscriber.service */ "./src/app/subscriber.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+
 
 
 
@@ -818,10 +821,9 @@ let HomeComponent = class HomeComponent {
     constructor(subscriberService, router) {
         this.subscriberService = subscriberService;
         this.router = router;
+        this.formdata = new _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormGroup"]({});
         this.subscriber = new _subscriber__WEBPACK_IMPORTED_MODULE_2__["Subscriber"]();
         this.submitted = false;
-    }
-    ngOnInit() {
     }
     newSubscriber() {
         this.submitted = false;
@@ -831,14 +833,31 @@ let HomeComponent = class HomeComponent {
         this.subscriberService.createSubscriber(this.subscriber)
             .subscribe(data => console.log(data), error => console.log(error));
         this.subscriber = new _subscriber__WEBPACK_IMPORTED_MODULE_2__["Subscriber"]();
-        this.gotoList();
+        // this.gotoList();
     }
     onSubmit() {
         this.submitted = true;
-        this.gotoList();
+        // this.gotoList(); 
+        this.onClickLogin;
     }
-    gotoList() {
-        this.router.navigate(['/authorbooks']);
+    //gotoList() {
+    //  this.router.navigate(['/authorbooks']);
+    //}
+    ngOnInit() {
+        this.formdata = new _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormGroup"]({
+            username: new _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormControl"](""),
+            password: new _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormControl"]("")
+        });
+    }
+    onClickLogin(data) {
+        console.log("username==" + data.username + " password==" + data.password);
+        this.subscriberService.loginAdmin(data).subscribe({
+            next: (data) => {
+                localStorage.setItem("token", data.token);
+                console.log("token==" + data.token);
+                this.router.navigate(['/authorbooks']);
+            }
+        });
     }
 };
 HomeComponent.ctorParameters = () => [
@@ -1073,13 +1092,12 @@ let SubscriberService = class SubscriberService {
     constructor(http) {
         this.http = http;
         this.baseUrl = 'http://localhost:8091/books';
-        this.auth = 'http://localhost:8091/';
     }
-    authenticate() {
-        return this.http.get(`${this.auth}`);
+    loginAdmin(admin) {
+        return this.http.post(`${this.baseUrl}/authenticate`, admin);
     }
     getAllBooks() {
-        return this.http.get(`${this.baseUrl}`);
+        return this.http.get(`${this.baseUrl}`, { headers: { "Authorization": "Bearer " + localStorage.getItem("token") } });
     }
     getBookById(id) {
         return this.http.get(`${this.baseUrl}/${id}`);
@@ -1374,7 +1392,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\NEW\angular8-springboot-client\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\Angular-Springboot\angular8-springboot-client\src\main.ts */"./src/main.ts");
 
 
 /***/ })
