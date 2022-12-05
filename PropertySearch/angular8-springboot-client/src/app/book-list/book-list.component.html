@@ -1,0 +1,49 @@
+
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2 style="color:rgb(197, 194, 18);float:left">Property List</h2>
+      <p style="float:right" > <a routerLink="add" class="nav-link" routerLinkActive="active"><h5 style="color:rgb(18, 197, 158)">Create</h5></a></p>
+   <br>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped" id="myTable">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Property Address</th>  
+            <th>Property Type</th>
+           
+            <th>Edit</th> 
+            <th>Remove</th> 
+            <th>View</th> 
+                
+          </tr>
+          <tr>
+          <td>
+            <input type="text" placeholder="Firstname search" [(ngModel)]="fname" />
+            <button (click)="filterfirstname(fname)" formtarget="_blank">Go</button>
+          </td>
+        </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let property of subscribers | async">
+            <td>{{property.firstname}}</td>
+            <td>{{property.lastname}}</td>
+            <td>{{property.address}}</td>  
+            <td>{{property.type}}</td> 
+           
+        
+          <td><button (click)="updateSubscriber(property.id)" class="btn btn-warning">Update</button></td>
+          <td><button (click)="deleteSubscriber(property.id)" class="btn btn-danger">Delete</button></td>
+          <td><button (click)="subscriberDetails(property.id)" class="btn btn-info" style="margin-left: 10px">Details</button></td>
+              
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+  
+  

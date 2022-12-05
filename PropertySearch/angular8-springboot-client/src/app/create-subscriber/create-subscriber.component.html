@@ -1,0 +1,79 @@
+<h3 style="color:midnightblue">Create Property</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form class="register-form"
+            action=""
+            #f="ngForm"
+            novalidate
+            (ngSubmit)="f.form.valid&&onSubmit()">
+            
+            <div class="form-group">
+              <label for="name"><b>First Name</b></label>
+              <input type="text" class="form-control" name="firstname"  id="" [(ngModel)]="subscriber.firstname" #firstname="ngModel" required   >
+              <span class="text-danger" *ngIf="this.submit&&firstname.errors?.required" >
+                  First Name is required.
+              </span>
+           </div>
+
+    <div class="form-group">
+      <label for="name"><b>Last Name</b></label>
+      <input type="text" class="form-control" name="lastname"  id="" [(ngModel)]="subscriber.lastname" #lastname="ngModel" required   >
+      <span class="text-danger" *ngIf="this.submit&&lastname.errors?.required" >
+          Last Name is required.
+      </span>   </div>
+
+    <div class="form-group">
+      <label for="name"><b>Property Address</b></label>
+      <input type="text" class="form-control" name="address"  id="" [(ngModel)]="subscriber.address" #address="ngModel" required   >
+      <span class="text-danger" *ngIf="this.submit&&address.errors?.required" >
+          Address is required.
+      </span> </div>
+
+   <div class="form-group">
+      <label for="name"><b>Property Name</b></label>
+      <input type="text" class="form-control" name="propertyname"  id="" [(ngModel)]="subscriber.propertyname" #propertyname="ngModel" required   >
+      <span class="text-danger" *ngIf="this.submit&&propertyname.errors?.required" >
+          Property Name is required.
+      </span>  </div> 
+
+    <div class="form-group">
+      <label for="name"><b>Property Type</b></label>
+      <input type="text" class="form-control" name="type"  id="" [(ngModel)]="subscriber.type" #type="ngModel" required   >
+      <span class="text-danger" *ngIf="this.submit&&type.errors?.required" >
+          Property Type is required.
+      </span> </div>
+
+    <div class="form-group">
+      <label for="name"><b>Legal Description</b></label>
+      <input type="text" class="form-control" name="legaldesc"  id="" [(ngModel)]="subscriber.legaldesc" #legaldesc="ngModel" required   >
+      <span class="text-danger" *ngIf="this.submit&&legaldesc.errors?.required" >
+          Legal Description is required.
+      </span> </div>
+
+    <div class="form-group">
+      <label for="name"><b>Property Tax amount</b></label>
+      <input type="number" class="form-control" id="taxamount" required [(ngModel)]="subscriber.taxamount" name="taxamount">
+    </div>
+
+    <div class="form-group">
+      <label for="name"><b>Property Tax Paid Status</b></label><br>
+      &nbsp;&nbsp;<input type="radio"  id="taxstatus" required  name="taxstatus" value="1" checked="true">&nbsp;&nbsp;Active
+      &nbsp;&nbsp;<input type="radio"  id="taxstatus" required  name="taxstatus" value="0">&nbsp;&nbsp;InActive
+    </div>
+
+    <div class="form-group">
+      <label for="name"><b>Escrow Account</b></label>
+      <input type="text" class="form-control" name="escrowaccount"  id="" [(ngModel)]="subscriber.escrowaccount" #escrowaccount="ngModel" required   >
+      <span class="text-danger" *ngIf="this.submit&&escrowaccount.errors?.required" >
+        Escrow Account is required.
+      </span> </div>
+
+    <button type="submit" class="btn btn-success" (click)="submit=true">Submit</button> &nbsp;&nbsp;&nbsp;
+    <button (click)="list()" class="btn btn-primary">Back</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>Property Created successfully!</h4>
+  <button (click)="list()" class="btn btn-warning">Go To Property List</button>
+  <!-- <button class="btn btn-success" (click)="newSubscriber()">Add</button> -->
+</div>

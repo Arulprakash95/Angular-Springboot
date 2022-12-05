@@ -1,0 +1,42 @@
+
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2 style="color:rgb(18, 197, 173)">Property List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped" id="myTable">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Property Address</th>  
+            <th>Property Type</th>
+            <th>Property Name</th>  
+            <th>Tax Amount</th>  
+            <th>Escrow Account</th>            
+          </tr>
+          <tr>
+            <td>
+              <input type="text" placeholder="Firstname search" [(ngModel)]="fname" />
+              <button (click)="filterfirstname(fname)" formtarget="_blank">Go</button>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let property of subscribers | async">
+            <td>{{property.firstname}}</td>
+            <td>{{property.lastname}}</td>
+            <td>{{property.address}}</td>  
+            <td>{{property.type}}</td> 
+            <td>{{property.propertyname}}</td>  
+            <td>{{property.taxamount}}</td>
+            <td>{{property.escrowaccount}}</td> 
+          
+              
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>

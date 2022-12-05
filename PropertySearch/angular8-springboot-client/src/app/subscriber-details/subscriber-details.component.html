@@ -1,0 +1,26 @@
+<h2 style=color:darkcyan>Property Details</h2>
+
+<hr/>
+<div *ngIf="subscriber">
+ 
+  <div><table>
+    <tr><th>First Name</th><th>:&nbsp;&nbsp;</th><td>{{subscriber.firstname}}</td></tr>
+    <tr><th>Last Name</th><th>:</th><td>{{subscriber.lastname}}</td></tr>
+    <tr><th>Property Name</th><th>:</th><td> {{subscriber.propertyname}}</td></tr>
+    <tr><th>Property Type</th><th>:</th><td> {{subscriber.type}}</td></tr>
+    <tr><th>Property Address</th><th>:</th><td> {{subscriber.address}}</td></tr>
+    <tr><th>Legal Description</th><th>:</th><td> {{subscriber.legaldesc}}</td></tr>
+    <tr><th>Tax Amount</th><th>:</th><td> {{subscriber.taxamount}}</td></tr>
+    <tr><th>Tax Paid Status</th><th>:</th><td *ngIf="subscriber.taxstatus == 1">Paid</td><td *ngIf="subscriber.taxstatus == 0">Not Paid </td></tr>
+    <tr><th>Escrow Account</th><th>:</th><td> {{subscriber.escrowaccount}}</td></tr>
+    
+    
+</table>
+  </div>
+
+  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Property List</button><br>
